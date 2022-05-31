@@ -1,0 +1,31 @@
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  grid-gap: 20px;
+  background-color: rgb(255, 255, 255, 0);
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: rgb(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+body {
+  background-image: url('https://www.stockvault.net/data/2020/01/22/272768/preview16.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
