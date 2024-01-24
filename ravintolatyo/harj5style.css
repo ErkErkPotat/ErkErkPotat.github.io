@@ -1,31 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: underline;
+}
+hr{
+  color: gray;
+  border-style: solid;
+}
+.hr2{
+  margin: auto;
+  width: 95%;
+  color: gray;
+  border-style: solid;
+}
 
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item5 { grid-area: footer; }
+.item1 { 
+  grid-area: header;
+  background-color: rgba(232, 232, 232, 0.822); 
+}
+.item2 { 
+  background-color: rgba(232, 232, 232, 0.822);
+  grid-area: menu; 
+  margin-bottom: 10px;
+}
+.item3 { 
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  grid-area: main; 
+  margin: auto;
+  margin-top: 20px;
+  width: 85%;
+}
+.item5 { 
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  grid-area: footer; 
+  margin: auto;
+  margin-top: 20px;
+  width: 85%;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main main main'
-    'menu footer footer footer footer footer';
-  grid-gap: 20px;
+    'header header header header header'
+    'menu main main main main'
+    'menu footer footer footer footer';
   background-color: rgb(255, 255, 255, 0);
-  padding: 20px;
 }
 
 .grid-container > div {
-  background-color: rgb(255, 255, 255, 0.6);
   text-align: center;
-  padding: 50px 0;
   font-size: 30px;
+  padding: 10px;
 }
+
 body {
+  font-family: "Roboto";
   background-image: url('https://www.stockvault.net/data/2020/01/22/272768/preview16.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
+.flexbox-container{
+  display: flex;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+  background-color: rgb(143, 138, 138);
+  width: 50px;
+  height: 30px;
+  border-radius: 1rem;
+}
+.form{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(232, 232, 232, 0.822); 
+}
+
+.coolinput{
+  border-radius: 0.5rem;
+  background-color: white;
+  border-width:0.15rem;
+  border-color: black;
+  border-style: solid;
+  width: 12rem;
+  height: 3rem;
+  text-align: center;
+  margin: 0.15rem;
+}
+.coolinput:hover{
+  border-radius: 0.5rem;
+  background-color: rgb(220, 220, 220);
+  border-width:0.2rem;
+  border-color: black;
+  border-style: solid;
+  width: 12rem;
+  height: 3rem;
+  text-align: center;
+  margin: 0.1rem;
+}
+.coolinput:focus{
+  border-radius: 0.5rem;
+  background-color: rgb(220, 220, 220);
+  border-width:0.2rem;
+  border-color: black;
+  border-style: solid;
+  width: 12rem;
+  height: 3rem;
+  text-align: center;
+  margin: 0.1rem;
+}
+
+.textbox{
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  border-width:0.2rem;
+  border-color: black;
+  border-style: solid;
+  width: 30rem;
+  height: 10rem;
+  text-align: left;
+  margin: 0.1rem;
+}
+.coolsubmit{
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 12rem;
+  height: 3rem; 
+  margin-bottom: 10rem;
+}
